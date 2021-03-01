@@ -1,0 +1,85 @@
+Day1 of Python
+
+#printing 
+
+print("Hello World!")
+
+#Printing on New Line using Single Command
+
+print("Hello World!\nHello World!\nHello World!")
+
+#Printing Using to Two String and adding Space to it.
+
+print("Hello" +" " + "Angela")
+
+#Input Command
+
+input("what your Name?")
+
+#printing the using Input data
+
+print("Hello " +  input("what your Name?"))
+
+# Excercise 1 of Day1 
+# To write code which can show can same output as given
+### Printing to the Console
+
+# Example Output
+
+After you have written your code, you should run your program and it should print the following:
+
+Day 1 - Python Print Function
+The function is declared like this:
+print("what to print")
+
+# Written Code
+
+print("Day 1 - Python Print Function")
+print("The function is declared like this:")
+print("print('what to print')")
+
+#Debugging of given code
+
+print("Day 1 - String Manipulation")
+print('String Concatenation is done with the "+" sign.')
+print('e.g. print("Hello " + "world")')
+print("New lines can be created with a backslash and n.")
+
+
+#Code for calculating charachter in your Name
+
+print( len( input("What Your Name? "'')))
+
+
+#code for variable interpertion
+#Write a program that switches the values stored in the variables a and b. 
+
+# 🚨 Don't change the code below 👇
+a = input("a: ")
+b = input("b: ")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+c= a
+a= b
+b= c
+
+
+
+
+#Write your code above this line 👆
+####################################
+
+# 🚨 Don't change the code below 👇
+print("a: " + a)
+print("b: " + b)
+
+
+#Code for Band Name Generator Using Input From User.
+
+
+print("Welcome to Band Name Generator.")
+city = input("What's the name of city you grew up in?\n")
+
+pet = input("what's your pet name?\n")
+print("Your Band Name could be " + city +" " + pet)
