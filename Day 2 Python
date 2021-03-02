@@ -1,0 +1,121 @@
+Day 2 Python
+
+#String 
+#Subscript
+
+print("Hello"[0])
+
+Print("Hello"[1])
+
+#integer
+
+print(12+25)
+
+#Float
+
+3.1456
+
+#boolean
+
+True/False
+
+
+# Calling Integer by String
+
+num_char = len(input("What's you Name ?"))
+
+new_num_char = str(num_char)
+
+print("Your Name has " + new_num_char + " characters" )
+
+#adding two digit number Code
+
+# 🚨 Don't change the code below 👇
+two_digit_number = input("Type a two digit number: ")
+# 🚨 Don't change the code above 👆
+
+####################################
+#Write your code below this line 👇
+
+first_digit = int(two_digit_number[0])
+second_digit = int(two_digit_number[1])
+
+result = first_digit + second_digit
+
+print(result)
+
+
+#PEDMAS Rule
+1 ()
+2 **
+3 / 
+4 * 
+5 +
+6 -
+
+ print(3*3+3/3-3)
+ o/p 7
+
+ #BMI CALCULATOR
+
+ # 🚨 Don't change the code below 👇
+height = input("enter your height in m: ")
+weight = input("enter your weight in kg: ")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+
+new_height = float(height)
+
+new_weight = float(weight)
+
+bmi= (new_weight/new_height**new_height)
+
+new_bmi = int(bmi)
+
+print(new_bmi)
+
+
+
+# Life Left Calculator
+
+# 🚨 Don't change the code below 👇
+age = input("What is your current age?")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+
+new_age = int(age)
+
+days_lived = 365*new_age
+weeks_lived = 52*new_age
+months_lived = 12*new_age
+
+days_90age= 365*90
+weeks_90age = 52*90
+months_90age = 12*90
+
+days_lefts = days_90age -  days_lived
+weeks_lefts = weeks_90age - weeks_lived
+months_lefts = months_90age - months_lived
+
+print(f"Your Days lefts are {days_lefts} , Your Weeks Lefts are {weeks_lefts} , months lefts are {months_lefts}.")
+
+
+# tip calculator builder
+
+#Tip Calculator
+print("Welcome to Tip Calculator")
+bill = float(input("what was the total bill ?"))
+tip = int(input("How much tip you would like to give 10 12 or 15 20 ?"))
+people = int(input("how many people to split the bill ?"))
+
+tip_percentage = tip/100
+bill_with_tip =  bill + tip_percentage
+bill_per_person = bill_with_tip/people
+final_amount = round(bill_per_person , 2)
+
+print(f"Each Per person should pat {final_amount}")
+
+
+
