@@ -1,0 +1,123 @@
+Day 3 python
+
+100 Days of Code
+
+#conditional Statements
+#logical operators
+# code Blocks
+
+#Roller Coaster Code
+
+print("Weelocme to the Rollercoaster")
+
+height = int(input("Whaat is your height in cm?"))
+
+
+if height>=120 :
+  print("You can ride the roller coaster")
+
+else :
+
+  print("Soory, you can't ride the roller coaster")  
+
+
+# Fare
+print("Welcome to the Rollercoaster")
+height = int(input("Whaat is your height in cm?"))
+
+
+if height>=120 :
+  print("You can ride the roller coaster")
+  age = int(input("Whats's your age?"))
+  if age > 18:
+    print("Your fare is 18$")
+  else:
+    print("Your Fare is 7$")  
+
+
+ 
+# ifelseif condition
+ 
+print("Welcome to the Rollercoaster")
+
+height = int(input("Whaat is your height in cm?"))
+
+
+if height>=120 :
+  print("You can ride the roller coaster")
+  age = int(input("Whats's your age?"))
+  if age < 12:
+    print("Your fare is 5$")
+  elif age<=18:
+    print("your fare is 7$")
+  else:
+    print("Your Fare is 12$")  
+
+else :
+  print("Sorry, you can't ride the roller coaster")     
+
+
+# BMI Calaculator with suggestion
+
+# 🚨 Don't change the code below 👇
+height = float(input("enter your height in m: "))
+weight = float(input("enter your weight in kg: "))
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+
+bmi= round(weight/height**2)
+
+
+if bmi < 18.5:
+  print(f"Your BMi is {bmi}, you are slighty are underweight")
+elif bmi < 25:
+    print(f"Your BMi is {bmi}, you have normal weight")
+elif bmi < 30:
+    print(f"Your BMi is {bmi}, you are overweight")  
+elif bmi < 35:
+    print(f"Your BMi is {bmi}, you are obese")  
+
+else :
+  print(f"Your BMi is {bmi}, you are clinically obese")  
+
+
+# Leap Year Code
+# 🚨 Don't change the code below 👇
+year = int(input("Which year do you want to check? "))
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+
+if year % 4 == 0:
+  if year % 100 == 0:
+    if year % 400 == 0:
+      print ("It's Leap Year")
+    else :
+      print("Not a Leap Year")
+  else :
+    print ("It's Leap Year")
+else :
+  print("Not a Leap Year")   
+
+
+# Photo addition to Bill  
+
+
+# 🚨 Don't change the code below 👇
+year = int(input("Which year do you want to check? "))
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+
+if year % 4 == 0:
+  if year % 100 == 0:
+    if year % 400 == 0:
+      print ("It's Leap Year")
+    else :
+      print("Not a Leap Year")
+  else :
+    print ("It's Leap Year")
+else :
+  print("Not a Leap Year")   
+
