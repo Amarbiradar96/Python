@@ -1,0 +1,96 @@
+Day 4 of python 
+
+#Day 4 of Code Python
+#Randmisation 
+
+import random
+
+random_integer = random.randint(1 , 10)
+
+print(random_integer)
+
+
+# Who is going to pay bill
+
+import random
+# Split string method
+names_string = input("Give me everybody's names, separated by a comma. ")
+names = names_string.split(", ")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+num_items = len(names)
+random_choice = random.randint(0, num_items - 1)
+person_who_will_pay_bill = names[random_choice]
+print(person_who_will_pay_bill + " is going to pay bill")
+
+#Treasure Game
+row1 = ["⬜️","️⬜️","️⬜️"]
+row2 = ["⬜️","⬜️","️⬜️"]
+row3 = ["⬜️️","⬜️️","⬜️️"]
+map = [row1, row2, row3]
+print(f"{row1}\n{row2}\n{row3}")
+
+position = input("Where do you want to put the treasure? ")
+
+horizontal = int(position[0])
+vertical = int(position[1])
+
+map[vertical - 1][horizontal - 1] = "X"
+
+print(f"{row1}\n{row2}\n{row3}")
+
+
+# Rock Paper Scissor
+
+import random
+
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+games_images = [rock, paper, scissors]
+
+user_choice = int(input("what do you choose? Type 0 for rock, 1 for paper, 2 for scissors\n"))
+print(games_images[user_choice])
+
+computer_choice = random.randint(0 , 2)
+print("Computer Chose:")
+print(games_images[computer_choice])
+
+if user_choice >=3 or user_choice < 0 :
+  print("You Type Invalid No, You lose")
+elif user_choice==0 or user_choice <0 :
+  print("you win")
+elif computer_choice==0 or user_choice ==2:
+  print("You Lose")
+elif computer_choice > user_choice:
+  print("You lose")
+elif user_choice> computer_choice:
+  print("You Win")
+elif user_choice == computer_choice:
+  print("It's Draw")
+          
